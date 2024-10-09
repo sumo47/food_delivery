@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <h2>Selling.</h2>
+        <h2>Jagannath Food Delivery</h2>
       </div>
       <ul className={isMobile ? "nav-links-mobile" : "nav-links"}>
         <li><Link to="/" onClick={() => setIsMobile(false)}>Home</Link></li>
