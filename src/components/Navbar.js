@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'; // Add styles here
+import { FaTimes } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
+
+
+
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -17,7 +22,7 @@ const Navbar = () => {
         <li><Link to="/contact" onClick={() => setIsMobile(false)}>Contact</Link></li>
       </ul>
       <button className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
-        {isMobile ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
+        {isMobile ? <FaTimes/> : <FaBars/>}
       </button>
     </nav>
   );
