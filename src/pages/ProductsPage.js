@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import DrawerSidebar from '../components/DrawerSidebar';
+import DrawerSidebar from '../components/DrawerSidebar.js';
 import './ProductsPage.css';
 
 const ProductsPage = () => {
